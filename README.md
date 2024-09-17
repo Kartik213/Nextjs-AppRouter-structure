@@ -45,3 +45,13 @@ For custom 404 pages, you can create a `not-found.tsx` file inside any route fol
 
 ### 8. Global Styles
 Global styles can be imported via `app/globals.css`. This file contains styles applied across the entire app.
+
+### 9. Components
+- Place reusable UI components in a `components/` directory at the project root (outside `app/`).
+- Avoid placing reusable components inside route folders. Only route-specific components should live inside the `app/` structure.
+
+### 10. API Routes
+- API routes are defined within the `app/api/` folder.
+- Each folder inside `app/api/` is an API endpoint, and you define the method handlers within them:
+    - `app/api/users/route.ts`: Defines the `/api/users` endpoint and handles various HTTP methods (`GET`, `POST`, etc.).
+- Use the `route.ts` file to define API routes.
