@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import './globals.css'; // Make sure this points to your global styles
-
 export const metadata : Metadata = {
-  title: 'TelosX',
-  description: 'Empowering the Future of Blockchain',
+  title: 'NextJs',
 };
 
 export default function RootLayout({
